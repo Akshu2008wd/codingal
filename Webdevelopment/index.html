@@ -6,6 +6,16 @@
     <title>Document</title>
 </head>
 <body>
-    <p>Hi everyone</p>
+    <h1>This is an sentence with object</h1>
+    <p></p>
+    <script>
+        let obj = {
+            name:"Raju",
+            age:23,
+            Marks:95,
+            cgpa:7.9
+        };
+        document.querySelector("p").innerText=obj.name + " is a good man.He is " + obj.age +" years old." + " He scored " + obj.Marks + " in math."+ " He has a cgpa of " + obj.cgpa
+    </script>
 </body>
 </html>
