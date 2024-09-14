@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <button onclick="time()">Current Time</button>
+<script>
+    function time() {
+
+        let hours = new Date().getHours();
+        let minute  = new Date().getMinutes();
+        let seconds = new Date().getSeconds();
+        let milisec  = new Date().getMilliseconds();
+        let date  = new Date().getDate();
+        let day  = new Date().getDay();
+        let year  = new Date().getFullYear();
+
+        if (hour>10){
+            document.getElementById("p1").innerHTML="Good morning";
+        }
+        else if (hour < 20){
+            document.getElementById("p1").innerHTML="Good evening";
+        }
+        else{
+            document.getElementById("p1").innerHTML="Good night";
+        } 
+        document.getElementById("p2").innerHTML=hours + ":" + minute + ":"  + milisec  + ":" + date + ":" + day  + ":"  + year ;
+    }
+   
+</script>
+</body>
+
+</html>
