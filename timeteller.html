@@ -8,22 +8,23 @@
 <body>
     <p id="p1"></p>
     <p id="p2"></p>
-    <button onclick="time()">Current Time</button>
+    <button onclick="showtime()">Current Time</button>
 <script>
-    function time() {
+    function showtime() {
 
-        let hours = new Date().getHours();
-        let minute  = new Date().getMinutes();
-        let seconds = new Date().getSeconds();
-        let milisec  = new Date().getMilliseconds();
-        let date  = new Date().getDate();
-        let day  = new Date().getDay();
-        let year  = new Date().getFullYear();
+        let now = new Date();
+        let hours= now.getHours();
+        let minute  = now.getMinutes();
+        let seconds = now.getSeconds();
+        let milisec  = now.getMilliseconds();
+        let date  = now.getDate();
+        let day  = now.getDay();
+        let year  = now.getFullYear();
 
-        if (hour>10){
+        if (hours < 10){
             document.getElementById("p1").innerHTML="Good morning";
         }
-        else if (hour < 20){
+        else if (hours > 20){
             document.getElementById("p1").innerHTML="Good evening";
         }
         else{
