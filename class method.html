@@ -7,12 +7,26 @@
 </head>
 <body>
     <h2>This method</h2>
+    <p id="p1"></p>
     <script>
-        class fruits(name,mgf){
-            contructor(){
-                
+        class fruits{
+
+            contructor(name,mgf){
+                this.name=name;
+                this.mgf=mgf;
+            }
+            mgf(){
+                let mgf = new Date().getDate();
+                let fmg = 10; 
+                if(fmg > mgf){
+                    document.write("expired");
+                }
+                else{
+                    document.write("fresh");
+                }
             }
         }
+        document.getElementById("p1").innerHTML = name("mango") 
     </script>
 </body>
 </html>
