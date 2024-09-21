@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Eval method</h1>
+    <div id="p1"></div>
+    <button onclick="display()">click me!</button>
+        <script>
+            
+            function display(){
+
+                var a = 3424;
+                var b = 421234;
+                var c = eval("a+b") + "<br>";
+                var d = eval("a*b");     
+                
+                let result = c+d;
+                document.getElementById("p1").innerHTML=result;
+             }
+            
+        </script>
+</body>
+</html>
