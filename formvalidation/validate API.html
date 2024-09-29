@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" name="name" min="100" max="990" id="form" required> 
+    <input type="submit" onclick="myfun()">
+    <div class="d1"></div>
+    <script>
+        function myfun(){
+            let x = document.getElementById("form")
+            if(!x.checkValidity())
+            {
+                document.querySelector(".d1").innerHTML = x.validationMessage;
+            }else{
+                document.querySelector(".d1").innerHTML = "Ok";
+            }
+        }
+    </script>
+</body>
+</html>
