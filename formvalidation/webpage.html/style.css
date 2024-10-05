@@ -1,0 +1,33 @@
+
+.nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: gainsboro;
+    padding: 20px;
+  
+}
+.a{
+      text-decoration: none;
+    color: blue;
+    font-size: larger;
+}
+.a:hover{
+    border-bottom: 1px solid red;
+}
+.div-img{
+    background-image:url(123.jpg);
+    height: 87vh;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-top: 20px; 
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  
+}
+greetings{
+    color: aliceblue;
+    font-size: xxx-large;
+}
