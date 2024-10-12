@@ -46,6 +46,9 @@ greetings{
 .a2{
     color: gold;
     text-decoration: none;
-    padding: 30px;
-
+    padding: 25px;
+    border: 3px solid ;
+    width: 7vw;
+    margin: 3px;
+    border-radius: 9px;
 }
