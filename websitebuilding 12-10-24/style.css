@@ -1,0 +1,51 @@
+.nav{
+    display: flex;
+    justify-content: space-around;
+    background-color: gainsboro;
+    padding: 20px;
+  
+}
+.a{
+      text-decoration: none;
+    color: blue;
+    font-size: larger;
+}
+.a:hover{
+    border-bottom: 1px solid red;
+}
+.div-img{
+    background-image:url(123.jpg);
+    height: 87vh;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-top: 20px; 
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  
+} 
+greetings{
+    color: rgb(0, 136, 255);
+    font-size: xxx-large;
+}
+.foot{
+    background: #2c2c2c;
+    height: 30vh;
+    color: gold;
+    padding: 5px;
+    margin: 10px;
+}
+.a1{
+    display: flex;
+    text-wrap: wrap;
+    flex-direction: column;
+    padding: 20px;
+    
+}
+.a2{
+    color: gold;
+    text-decoration: none;
+    padding: 30px;
+
+}
