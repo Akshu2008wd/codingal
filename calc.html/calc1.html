@@ -1,0 +1,80 @@
+
+<!DOCTYPE html> 
+<html> 
+  
+<head> 
+    <title>HTML Calculator</title> 
+  
+ 
+    <style> 
+        table { 
+            border: 1px solid black; 
+            margin-left: auto; 
+            margin-right: auto; 
+        } 
+          
+        button[type="button"] { 
+            width: 100%; 
+            padding: 20px 40px; 
+            background-color: green; 
+            color: white; 
+            font-size: 24px; 
+            font-weight: bold; 
+            border: none; 
+            border-radius: 5px; 
+        } 
+          
+        input[type="number"] { 
+            padding: 20px 30px; 
+            font-size: 24px; 
+            font-weight: bold; 
+            border: none; 
+            border-radius: 5px; 
+            border: 2px solid black; 
+        } 
+        .container{
+            top: 250px;
+            position: relative;            
+        }
+    </style> 
+</head> 
+  
+<body> 
+<div class="container">
+    <table id="calcu"> 
+        <tr> 
+            <td colspan="3"> 
+                <input type="number" id="result"> 
+            </td> 
+            <td><button type="button" value="c">C</td> 
+        </tr> 
+        
+        <tr> 
+            <td><button type="button" value="1">1</td> 
+            <td><button type="button" value="2">2</td> 
+            <td><button type="button" value="3">3</td> 
+            <td><button type="button" value="/">/</td> 
+        </tr> 
+        <tr> 
+            <td><button type="button" value="4">4</td> 
+            <td><button type="button" value="5">5</td> 
+            <td><button type="button" value="6">6</td> 
+            <td><button type="button" value="*">*</td> 
+        </tr> 
+        <tr> 
+            <td><button type="button" value="7">7</td> 
+            <td><button type="button" value="8">8</td> 
+            <td><button type="button" value="9">9</td> 
+            <td><button type="button" value="-">-</td> 
+        </tr> 
+        <tr> 
+            <td><button type="button" value="0">0</td> 
+            <td><button type="button" value=".">.</td> 
+            <td><button type="button" value="=">=</td> 
+            <td><button type="button" value="+">+</td> 
+        </tr> 
+    </table>
+</div>
+</body> 
+  
+</html>  
