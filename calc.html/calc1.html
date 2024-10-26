@@ -19,8 +19,8 @@
             border: none; 
             border-radius: 5px; 
         } 
-        input[type="number"] { 
-            padding: 20px 30px; 
+        div[type="number"] { 
+            padding: 30px 30px; 
             font-size: 24px; 
             font-weight: bold; 
             border: none; 
@@ -32,6 +32,7 @@
             position: relative;  
             color: orange;         
         }
+        
     </style> 
 </head> 
 <body> 
@@ -39,34 +40,37 @@
     <table id="calcu"> 
         <tr> 
             <td colspan="3"> 
-                <input type="number" id="result"> 
+                <div type="number" id="result" class="display"> 
+                </div>
             </td> 
-            <td><button type="button" value="c">C</td> 
+            <td><button type="button" value="c" onclick="backs()" class="back">⌫</td>
+               
         </tr> 
         
         <tr> 
-            <td><button type="button" value="1">1</td> 
-            <td><button type="button" value="2">2</td> 
-            <td><button type="button" value="3">3</td> 
-            <td><button type="button" value="/">/</td> 
+            <td><button type="button" value="1" onclick="disnum('1')">1</td> 
+            <td><button type="button" value="2" onclick="disnum('2')">2</td> 
+            <td><button type="button" value="3" onclick="disnum('3')">3</td> 
+            <td><button type="button" value="/" onclick="disnum('/')">/</td> 
         </tr> 
         <tr> 
-            <td><button type="button" value="4">4</td> 
-            <td><button type="button" value="5">5</td> 
-            <td><button type="button" value="6">6</td> 
-            <td><button type="button" value="*">*</td> 
+            <td><button type="button" value="4" onclick="disnum('4')">4</td> 
+            <td><button type="button" value="5" onclick="disnum('5')">5</td> 
+            <td><button type="button" value="6" onclick="disnum('6')">6</td> 
+            <td><button type="button" value="*" onclick="disnum('*')">x</td> 
         </tr> 
         <tr> 
-            <td><button type="button" value="7">7</td> 
-            <td><button type="button" value="8">8</td> 
-            <td><button type="button" value="9">9</td> 
-            <td><button type="button" value="-">-</td> 
+            <td><button type="button" value="7" onclick="disnum('7')">7</td> 
+            <td><button type="button" value="8" onclick="disnum('8')">8</td> 
+            <td><button type="button" value="9" onclick="disnum('9')">9</td> 
+            <td><button type="button" value="-" onclick="disnum('/')">-</td> 
         </tr> 
         <tr> 
-            <td><button type="button" value="0">0</td> 
-            <td><button type="button" value=".">.</td> 
-            <td><button type="button" value="=">=</td> 
-            <td><button type="button" value="+">+</td> 
+            <td><button type="button" value="0" onclick="disnum()">0</td> 
+            <td><button type="button" value="." onclick="disnum()">.</td> 
+            <td><button type="button" value="=" onclick="result()">=</td> 
+            <td><button type="button" value="+" onclick="disnum()">+</td> 
+            <td><button type="button" value="c" onclick="backsall()" class="backall">⌫All</td> 
         </tr> 
     </table>
 </div>
